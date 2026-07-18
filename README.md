@@ -86,6 +86,33 @@ module.exports = { theme: { extend: { ...neoBrutalism.tailwind } } };
 ### Vol. 3 — **SYSTEM** (enterprise design systems)
 `ibm-carbon` · `material-3` · `apple-hig` · `fluent-2` · `shopify-polaris` · `atlassian-ds` · `salesforce-lightning` · `vaporwave` · `cyberpunk` · `minimalism`
 
+### 🎨 The 3-volume series
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="./docs/cover-vol1-trend.png" width="180"><br>
+<b>Vol.1 · TREND</b><br>
+<sub>"깔끔하게"는 그만</sub><br>
+<sub>cream + fluorescent</sub>
+</td>
+<td align="center" width="33%">
+<img src="./docs/cover-vol2-heritage.png" width="180"><br>
+<b>Vol.2 · HERITAGE</b><br>
+<sub>트렌드만 쫓지 말고</sub><br>
+<sub>craft paper + vintage serif</sub>
+</td>
+<td align="center" width="33%">
+<img src="./docs/cover-vol3-system.png" width="180"><br>
+<b>Vol.3 · SYSTEM</b><br>
+<sub>내 멋대로 만들지 말고</sub><br>
+<sub>cool grey + corporate blue</sub>
+</td>
+</tr>
+</table>
+
+Each volume shares the same layout skeleton but has its own palette, typography, and hook — reflecting the spirit of its theme.
+
 ---
 
 ## 📖 Companion ebook
