@@ -1,0 +1,146 @@
+/* ============================================================
+   Glassmorphism Design Tokens (CSS custom properties + utilities)
+   이 파일을 import하고 .aurora-bg 안에 .glass 요소를 넣으세요.
+   ============================================================ */
+
+:root {
+  /* ---- Aurora background ---- */
+  --g-bg-base: #1a1a2e;
+  --g-blob-pink: #FF6B9D;
+  --g-blob-cyan: #00E5FC;
+  --g-blob-lime: #A6FF4D;
+
+  /* ---- Glass surfaces ---- */
+  --g-fill-light: rgba(255, 255, 255, 0.10);
+  --g-fill-dark: rgba(20, 20, 30, 0.40);
+  --g-fill-acrylic: rgba(250, 249, 248, 0.70);
+
+  --g-border-light: 1px solid rgba(255, 255, 255, 0.20);
+  --g-border-dark: 1px solid rgba(255, 255, 255, 0.10);
+
+  --g-blur: 16px;
+  --g-blur-lg: 24px;
+  --g-saturate: saturate(180%);
+
+  --g-radius: 20px;
+  --g-radius-nav: 16px;
+
+  --g-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+  --g-shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+  /* ---- Text (light-on-glass) ---- */
+  --g-text: #f8fafc;
+  --g-text-muted: rgba(248, 250, 252, 0.75);
+
+  /* ---- Typography ---- */
+  --g-font: 'Inter', 'SF Pro', 'Pretendard', sans-serif;
+  --g-font-mono: 'SF Mono', 'JetBrains Mono', monospace;
+}
+
+/* ============================================================
+   Aurora background — REQUIRED base layer for glass to work
+   ============================================================ */
+
+.aurora-bg {
+  background:
+    radial-gradient(circle at 20% 20%, var(--g-blob-pink) 0%, transparent 40%),
+    radial-gradient(circle at 80% 30%, var(--g-blob-cyan) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, var(--g-blob-lime) 0%, transparent 40%),
+    var(--g-bg-base);
+  min-height: 100vh;
+  color: var(--g-text);
+  font-family: var(--g-font);
+}
+
+/* ============================================================
+   Glass component utilities
+   ============================================================ */
+
+/* Light glass card (default) */
+.glass {
+  background: var(--g-fill-light);
+  backdrop-filter: blur(var(--g-blur)) var(--g-saturate);
+  -webkit-backdrop-filter: blur(var(--g-blur)) var(--g-saturate);
+  border: var(--g-border-light);
+  border-radius: var(--g-radius);
+  box-shadow: var(--g-shadow), var(--g-shadow-inset);
+  padding: 28px;
+}
+
+/* Dark glass variant (premium, my favorite) */
+.glass-dark {
+  background: var(--g-fill-dark);
+  backdrop-filter: blur(var(--g-blur-lg)) var(--g-saturate);
+  -webkit-backdrop-filter: blur(var(--g-blur-lg)) var(--g-saturate);
+  border: var(--g-border-dark);
+  border-radius: var(--g-radius);
+  color: var(--g-text);
+  padding: 28px;
+}
+
+/* Microsoft Acrylic variant */
+.glass-acrylic {
+  background: var(--g-fill-acrylic);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+/* Glass navigation bar (sticky top) */
+.glass-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(24px) var(--g-saturate);
+  -webkit-backdrop-filter: blur(24px) var(--g-saturate);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Glass CTA button */
+.glass-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px) var(--g-saturate);
+  -webkit-backdrop-filter: blur(16px) var(--g-saturate);
+  border: var(--g-border-light);
+  border-radius: 999px;  /* pill shape */
+  padding: 12px 28px;
+  color: var(--g-text);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease;
+}
+.glass-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.20);
+}
+
+/* Glass card with hover float */
+.glass-hover {
+  transition: transform 250ms ease, box-shadow 250ms ease;
+}
+.glass-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18), var(--g-shadow-inset);
+}
+
+/* ============================================================
+   Base typography for glass contexts
+   ============================================================ */
+
+.aurora-bg h1,
+.aurora-bg h2,
+.aurora-bg h3 {
+  font-weight: 600;  /* never 900 — too heavy for glass */
+  line-height: 1.2;
+  color: var(--g-text);
+}
+
+.aurora-bg p {
+  color: var(--g-text-muted);
+  line-height: 1.6;
+}

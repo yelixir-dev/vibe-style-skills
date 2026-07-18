@@ -1,0 +1,106 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "glassmorphism",
+  "description": "Glassmorphism design tokens — frosted glass cards over vibrant aurora gradient backgrounds. Includes classic glassmorphism + Apple Liquid Glass + Microsoft Acrylic variants.",
+  "variants": {
+    "classic": "frosted blur + translucent fill + thin light border",
+    "liquid-glass": "Apple iOS 26 — dynamic refraction, specular highlights",
+    "acrylic": "Microsoft Fluent — more opaque, in-app or host backdrop"
+  },
+  "background": {
+    "type": "aurora-mesh-gradient",
+    "base": { "value": "#1a1a2e", "comment": "dark navy — glass is invisible on flat white" },
+    "blobs": [
+      { "color": "#FF6B9D", "position": "20% 20%", "comment": "hot pink" },
+      { "color": "#00E5FC", "position": "80% 30%", "comment": "cyan" },
+      { "color": "#A6FF4D", "position": "50% 80%", "comment": "lime" }
+    ],
+    "ironRule": "NEVER put glass on flat white/cream — the blur effect is invisible there"
+  },
+  "glass": {
+    "light": {
+      "background": "rgba(255,255,255,0.10)",
+      "backdropFilter": "blur(16px) saturate(180%)",
+      "webkitPrefix": "REQUIRED — always include -webkit-backdrop-filter",
+      "border": "1px solid rgba(255,255,255,0.20)",
+      "borderRadius": "20px",
+      "boxShadow": "0 8px 32px rgba(0,0,0,0.10)",
+      "innerGlow": "inset 0 1px 0 rgba(255,255,255,0.25)"
+    },
+    "dark": {
+      "background": "rgba(20,20,30,0.40)",
+      "backdropFilter": "blur(20px) saturate(180%)",
+      "border": "1px solid rgba(255,255,255,0.10)",
+      "textColor": "#f8fafc"
+    },
+    "acrylic": {
+      "_comment": "Microsoft Fluent variant",
+      "background": "rgba(250,249,248,0.70)",
+      "backdropFilter": "blur(30px)",
+      "borderRadius": "8px"
+    }
+  },
+  "blur": {
+    "min": "8px",
+    "sweet": "16px",
+    "max": "30px",
+    "comment": "<8px barely visible, >30px muddy"
+  },
+  "saturate": {
+    "value": "180%",
+    "comment": "boosts colors through the frost — separates premium from washed-out"
+  },
+  "borderRadius": {
+    "min": "12px",
+    "sweet": "20px",
+    "comment": "sharp corners feel wrong on glass — it's a soft material"
+  },
+  "typography": {
+    "headline": {
+      "fontFamily": "'Inter', 'SF Pro', 'Pretendard', sans-serif",
+      "fontWeight": 600,
+      "fontSize": { "desktop": "40px", "mobile": "28px" },
+      "comment": "never black/900 weight — too heavy for glass"
+    },
+    "body": {
+      "fontFamily": "'Inter', 'Pretendard', sans-serif",
+      "fontWeight": 400,
+      "fontSize": "17px",
+      "lineHeight": 1.6
+    },
+    "label": {
+      "fontFamily": "'SF Mono', 'JetBrains Mono', monospace",
+      "textTransform": "sentence-case",
+      "comment": "NO ALL CAPS — too aggressive for glass's soft mood"
+    }
+  },
+  "shadow": {
+    "ambient": "0 8px 32px rgba(0,0,0,0.10)",
+    "comment": "soft and diffuse — never hard offset (that's brutalism)"
+  },
+  "accessibility": {
+    "riskLevel": "HIGH",
+    "warning": "Most accessibility-risky popular style. Text contrast often fails WCAG 4.5:1 over blurred backgrounds.",
+    "mitigations": [
+      "increase fill opacity to 0.18-0.35 if contrast fails",
+      "add dark overlay behind text only",
+      "test on the actual background image, not the designer's gradient"
+    ]
+  },
+  "forbidden": [
+    "glass on flat white/cream background (no blur visible)",
+    "fully transparent fill rgba(...,0)",
+    "fully opaque card (then it's just a regular card)",
+    "hard offset shadows (brutalist)",
+    "border-radius below 12px",
+    "heavy black borders",
+    "ALL CAPS heavy labels",
+    "low-contrast text on glass"
+  ],
+  "references": [
+    "apple.com (iOS 26 marketing — Liquid Glass)",
+    "learn.microsoft.com/fluent (Acrylic material)",
+    "stripe.com",
+    "linear.app"
+  ]
+}
