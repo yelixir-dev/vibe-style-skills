@@ -6,7 +6,7 @@
 30 named design styles — as Claude/GPT skills & copy-paste prompts for vibe coders.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Styles: 7/30](https://img.shields.io/badge/styles-7%2F30-orange)](#-the-30-styles--30-스타일)
+[![Styles: 8/30](https://img.shields.io/badge/styles-8%2F30-orange)](#-the-30-styles--30-스타일)
 [![Free Preview](https://img.shields.io/badge/free%20preview-PDF-blue)](./ebook/FREE-PREVIEW.pdf)
 [![Lang: EN+KR](https://img.shields.io/badge/lang-EN%20%2B%20KR-green)](#-한국어)
 
@@ -69,7 +69,7 @@ For each of the 30 styles, you get:
 | 05 | **Aurora Gradient** | [SKILL](./skills/aurora-gradient/SKILL.md) | [prompt](./prompts/aurora-gradient.md) | [json](./tokens/aurora-gradient.json) · [css](./tokens/aurora-gradient.css) | ✅ |
 | 06 | **Anti-Design** | [SKILL](./skills/anti-design/SKILL.md) | [prompt](./prompts/anti-design.md) | [json](./tokens/anti-design.json) | ✅ |
 | 07 | **Maximalism** | [SKILL](./skills/maximalism/SKILL.md) | [prompt](./prompts/maximalism.md) | [json](./tokens/maximalism.json) | ✅ |
-| 08 | Y2K | — | — | — | ⏳ |
+| 08 | **Y2K** | [SKILL](./skills/y2k/SKILL.md) | [prompt](./prompts/y2k.md) | [json](./tokens/y2k.json) | ✅ |
 | 09 | Dark Mode First | — | — | — | ⏳ |
 | 10 | 3D / Immersive | — | — | — | ⏳ |
 
@@ -192,7 +192,7 @@ AI에게 이렇게 말하면:
 | 05 | **Aurora Gradient** | [SKILL](./skills/aurora-gradient/SKILL.md) | [prompt](./prompts/aurora-gradient.md) | [json](./tokens/aurora-gradient.json) · [css](./tokens/aurora-gradient.css) | ✅ |
 | 06 | **Anti-Design** | [SKILL](./skills/anti-design/SKILL.md) | [prompt](./prompts/anti-design.md) | [json](./tokens/anti-design.json) | ✅ |
 | 07 | **Maximalism** | [SKILL](./skills/maximalism/SKILL.md) | [prompt](./prompts/maximalism.md) | [json](./tokens/maximalism.json) | ✅ |
-| 08 | Y2K | — | — | — | ⏳ |
+| 08 | **Y2K** | [SKILL](./skills/y2k/SKILL.md) | [prompt](./prompts/y2k.md) | [json](./tokens/y2k.json) | ✅ |
 | 09 | Dark Mode First | — | — | — | ⏳ |
 | 10 | 3D / Immersive | — | — | — | ⏳ |
 

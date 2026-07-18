@@ -1,0 +1,69 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "y2k",
+  "description": "Y2K Aesthetic design tokens — chrome, holographic, jelly, blob shapes. The future as 1999 imagined it. Two palettes: classic candy-chrome and cyber-techno.",
+  "variants": {
+    "classic": "candy chrome — pastel pink/blue/mint + chrome silver, white bg, optimistic",
+    "cyber": "dark techno — deep purple + neon pink/cyan, black bg, club/rave"
+  },
+  "surface": {
+    "chrome": "linear-gradient(180deg, #c0c0c0 0%, #ffffff 30%, #e8e8f0 50%, #ffffff 70%, #a8a8b0 100%)",
+    "holographic": "linear-gradient(135deg, #FF00FF, #00FFFF, #FFFF00) animated shift",
+    "jelly": "translucent pastel + top highlight + bottom inner shadow + outer soft drop",
+    "frost": "translucent plastic, frosted mesh (Frutiger Aero feel)"
+  },
+  "shape": {
+    "borderRadius": {
+      "blob": "50% 30% 70% 40% / 40% 50% 60% 50%",
+      "pill-blob": "30px 25px 35px 20px",
+      "rule": "ASYMMETRIC — never sharp, never geometric"
+    }
+  },
+  "palettes": {
+    "classic": {
+      "pink": "#FFB3D9",
+      "blue": "#B3D9FF",
+      "mint": "#B3FFD9",
+      "chrome": "#C0C0C0",
+      "bg": "#F5F5FF"
+    },
+    "cyber": {
+      "purple": "#2D1B69",
+      "hotPink": "#FF00FF",
+      "electric": "#00FFFF",
+      "bg": "#0D0221"
+    }
+  },
+  "typography": {
+    "headline": {
+      "fonts": ["Eurostile", "Orbitron", "Audiowide", "Michroma"],
+      "comment": "futuristic geometric — never serif"
+    },
+    "body": {
+      "fonts": ["Verdana", "Tahoma (period-accurate)", "Inter (modern)"]
+    },
+    "pixel": {
+      "fonts": ["Press Start 2P", "VT323"],
+      "use": "accents, labels, retro GUI"
+    },
+    "rounded": {
+      "fonts": ["Baloo 2", "Comic Sans MS (allowed here)"]
+    }
+  },
+  "decorations": ["star sparkles ✦", "blob shapes", "holographic gradients", "scan lines", "pixel art accents"],
+  "forbidden": [
+    "flat matte colors",
+    "sharp geometric corners",
+    "modern minimalism",
+    "single solid shadow",
+    "pure black/white bg",
+    "serif fonts",
+    "restraint"
+  ],
+  "references": [
+    "webdesignmuseum.org/y2k-aesthetic",
+    "glossier.com",
+    "fentybeauty.com",
+    "mschf.com"
+  ]
+}
