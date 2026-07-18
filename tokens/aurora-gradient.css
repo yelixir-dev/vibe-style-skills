@@ -1,0 +1,105 @@
+/* ============================================================
+   Aurora / Mesh Gradient Design Tokens (CSS)
+   다크 베이스 + 레이어드 radial-gradient blob
+   ============================================================ */
+
+:root {
+  /* ---- Dark base ---- */
+  --aurora-base: #0f172a;
+  --aurora-text: #f8fafc;
+  --aurora-text-muted: rgba(248, 250, 252, 0.7);
+
+  /* ---- Cosmic palette (default) ---- */
+  --aurora-pink: #FF6B9D;
+  --aurora-cyan: #00E5FC;
+  --aurora-violet: #A855F7;
+  --aurora-amber: #FBBF24;
+}
+
+/* ============================================================
+   Aurora backgrounds — 4 palettes
+   ============================================================ */
+
+/* Cosmic (default — Stripe feel) */
+.aurora-cosmic {
+  background:
+    radial-gradient(circle at 20% 20%, var(--aurora-pink) 0%, transparent 40%),
+    radial-gradient(circle at 80% 30%, var(--aurora-cyan) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, var(--aurora-violet) 0%, transparent 40%),
+    radial-gradient(circle at 70% 70%, var(--aurora-amber) 0%, transparent 35%),
+    var(--aurora-base);
+  color: var(--aurora-text);
+  min-height: 100vh;
+}
+
+/* Sunset */
+.aurora-sunset {
+  background:
+    radial-gradient(circle at 20% 30%, #FB923C 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, #EC4899 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, #FBBF24 0%, transparent 40%),
+    #1a0a0a;
+  color: var(--aurora-text);
+}
+
+/* Ocean */
+.aurora-ocean {
+  background:
+    radial-gradient(circle at 25% 25%, #06B6D4 0%, transparent 40%),
+    radial-gradient(circle at 75% 30%, #3B82F6 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, #14B8A6 0%, transparent 40%),
+    #04141a;
+  color: var(--aurora-text);
+}
+
+/* Forest */
+.aurora-forest {
+  background:
+    radial-gradient(circle at 25% 25%, #22C55E 0%, transparent 40%),
+    radial-gradient(circle at 75% 30%, #84CC16 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, #10B981 0%, transparent 40%),
+    #0a1a0a;
+  color: var(--aurora-text);
+}
+
+/* ============================================================
+   Living aurora — animated blobs (for web)
+   ============================================================ */
+
+.aurora-live {
+  position: relative;
+  overflow: hidden;
+  background: var(--aurora-base);
+  color: var(--aurora-text);
+}
+.aurora-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.55;
+  animation: aurora-float 10s ease-in-out infinite;
+}
+.aurora-blob:nth-child(1) { background: var(--aurora-pink);   width: 400px; height: 400px; top: 8%;  left: 8%; }
+.aurora-blob:nth-child(2) { background: var(--aurora-cyan);   width: 350px; height: 350px; top: 18%; right: 8%; animation-delay: -3s; }
+.aurora-blob:nth-child(3) { background: var(--aurora-violet); width: 450px; height: 450px; bottom: 8%; left: 38%; animation-delay: -6s; }
+
+@keyframes aurora-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(30px, -30px) scale(1.1); }
+  66%      { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+/* ============================================================
+   Typography on aurora
+   ============================================================ */
+
+.aurora-cosmic h1, .aurora-sunset h1, .aurora-ocean h1, .aurora-forest h1, .aurora-live h1,
+.aurora-cosmic h2, .aurora-sunset h2, .aurora-ocean h2, .aurora-forest h2, .aurora-live h2 {
+  color: var(--aurora-text);
+  font-weight: 700;
+  line-height: 1.15;
+}
+.aurora-cosmic p, .aurora-sunset p, .aurora-ocean p, .aurora-forest p, .aurora-live p {
+  color: var(--aurora-text-muted);
+  line-height: 1.6;
+}

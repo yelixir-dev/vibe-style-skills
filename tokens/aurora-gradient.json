@@ -1,0 +1,74 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "aurora-gradient",
+  "description": "Aurora / Mesh Gradient design tokens — layered radial-gradient blobs on a dark base. Dreamy, vibrant, premium tech aesthetic. Pairs canonically with Glassmorphism.",
+  "background": {
+    "type": "layered-radial-gradients",
+    "baseRule": "DARK base is non-negotiable. NEVER white — aurora looks washed out on light.",
+    "baseColors": {
+      "navy": "#0f172a",
+      "nearBlack": "#0a0e1a",
+      "deepPurple": "#1e1b4b"
+    },
+    "blobRule": "3-5 radial-gradient blobs, each fading to transparent 40%, at different positions",
+    "transparentStop": "transparent 40%"
+  },
+  "palettes": {
+    "cosmic": {
+      "mood": "우주적, 몽환 (Stripe 느낌)",
+      "colors": ["#FF6B9D pink", "#00E5FC cyan", "#A855F7 violet"]
+    },
+    "sunset": {
+      "mood": "따뜻한 노을",
+      "colors": ["#FB923C orange", "#EC4899 pink", "#FBBF24 amber"]
+    },
+    "ocean": {
+      "mood": "시원한 바다",
+      "colors": ["#06B6D4 cyan", "#3B82F6 blue", "#14B8A6 teal"]
+    },
+    "forest": {
+      "mood": "자연, 신선",
+      "colors": ["#22C55E green", "#84CC16 lime", "#10B981 emerald"]
+    }
+  },
+  "blob": {
+    "count": { "min": 3, "sweet": 4, "max": 5, "comment": "7+ gets muddy" },
+    "fadeStop": "transparent 40%",
+    "size": "large (300-500px) for flowing feel",
+    "positioning": "each blob at different X% Y% — spread across canvas"
+  },
+  "animation": {
+    "optional": true,
+    "type": "float",
+    "duration": "6-12s",
+    "easing": "ease-in-out",
+    "comment": "different blobs at different speeds/phases for organic feel"
+  },
+  "text": {
+    "color": "#f8fafc",
+    "opacity": { "headline": "1.0", "body": "0.9", "muted": "0.7" }
+  },
+  "typography": {
+    "fontFamily": "'Inter', 'SF Pro', 'Pretendard', sans-serif",
+    "headline": { "weight": 700, "comment": "clean modern — aurora is a background style" },
+    "body": { "weight": 400, "fontSize": "17px", "lineHeight": 1.6 }
+  },
+  "forbidden": [
+    "pure white/light base (aurora looks washed out)",
+    "single linear gradient (need layered radials)",
+    "random clashing colors (use harmonious palette)",
+    "more than 6 blobs (gets muddy)",
+    "hard color stops (need transparent 40% fade)",
+    "bright/saturated base (dark base only)"
+  ],
+  "pairs": {
+    "canonical": "glassmorphism (Stripe/Linear style)",
+    "good": ["bento-grid", "dark-mode", "3d-immersive"]
+  },
+  "references": [
+    "stripe.com",
+    "linear.app",
+    "vercel.com",
+    "framer.com"
+  ]
+}

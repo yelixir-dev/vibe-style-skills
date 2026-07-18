@@ -6,7 +6,7 @@
 30 named design styles — as Claude/GPT skills & copy-paste prompts for vibe coders.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Styles: 4/30](https://img.shields.io/badge/styles-4%2F30-orange)](#-the-30-styles--30-스타일)
+[![Styles: 5/30](https://img.shields.io/badge/styles-5%2F30-orange)](#-the-30-styles--30-스타일)
 [![Free Preview](https://img.shields.io/badge/free%20preview-PDF-blue)](./ebook/FREE-PREVIEW.pdf)
 [![Lang: EN+KR](https://img.shields.io/badge/lang-EN%20%2B%20KR-green)](#-한국어)
 
@@ -66,7 +66,7 @@ For each of the 30 styles, you get:
 | 02 | **Glassmorphism** | [SKILL](./skills/glassmorphism/SKILL.md) | [prompt](./prompts/glassmorphism.md) | [json](./tokens/glassmorphism.json) · [css](./tokens/glassmorphism.css) · [js](./tokens/glassmorphism.js) | ✅ |
 | 03 | **Bento Grid** | [SKILL](./skills/bento-grid/SKILL.md) | [prompt](./prompts/bento-grid.md) | [json](./tokens/bento-grid.json) · [css](./tokens/bento-grid.css) | ✅ |
 | 04 | **Claymorphism** | [SKILL](./skills/claymorphism/SKILL.md) | [prompt](./prompts/claymorphism.md) | [json](./tokens/claymorphism.json) · [css](./tokens/claymorphism.css) | ✅ |
-| 05 | Aurora Gradient | — | — | — | ⏳ |
+| 05 | **Aurora Gradient** | [SKILL](./skills/aurora-gradient/SKILL.md) | [prompt](./prompts/aurora-gradient.md) | [json](./tokens/aurora-gradient.json) · [css](./tokens/aurora-gradient.css) | ✅ |
 | 06 | Anti-Design | — | — | — | ⏳ |
 | 07 | Maximalism | — | — | — | ⏳ |
 | 08 | Y2K | — | — | — | ⏳ |
@@ -189,7 +189,7 @@ AI에게 이렇게 말하면:
 | 02 | **Glassmorphism** | [SKILL](./skills/glassmorphism/SKILL.md) | [프롬프트](./prompts/glassmorphism.md) | [json](./tokens/glassmorphism.json) · [css](./tokens/glassmorphism.css) · [js](./tokens/glassmorphism.js) | ✅ |
 | 03 | **Bento Grid** | [SKILL](./skills/bento-grid/SKILL.md) | [프롬프트](./prompts/bento-grid.md) | [json](./tokens/bento-grid.json) · [css](./tokens/bento-grid.css) | ✅ |
 | 04 | **Claymorphism** | [SKILL](./skills/claymorphism/SKILL.md) | [prompt](./prompts/claymorphism.md) | [json](./tokens/claymorphism.json) · [css](./tokens/claymorphism.css) | ✅ |
-| 05 | Aurora Gradient | — | — | — | ⏳ |
+| 05 | **Aurora Gradient** | [SKILL](./skills/aurora-gradient/SKILL.md) | [prompt](./prompts/aurora-gradient.md) | [json](./tokens/aurora-gradient.json) · [css](./tokens/aurora-gradient.css) | ✅ |
 | 06 | Anti-Design | — | — | — | ⏳ |
 | 07 | Maximalism | — | — | — | ⏳ |
 | 08 | Y2K | — | — | — | ⏳ |
