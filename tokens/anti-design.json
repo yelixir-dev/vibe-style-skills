@@ -1,0 +1,67 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "anti-design",
+  "description": "Anti-Design tokens — intentional rule-breaking. Misaligned layouts, mismatched fonts (3-4), clashing saturated colors, visible 'mistakes' as features. Punk/zine/web 1.0 aesthetic.",
+  "philosophy": "Every broken rule must be INTENTIONAL. Document why each rule was broken. Accidental bad design is just bad design.",
+  "layout": {
+    "grid": "BROKEN — off-grid, asymmetric, rotated elements (1-3deg)",
+    "spacing": "inconsistent on purpose — some elements touch edges, others float",
+    "rotation": {
+      "tilt-soft": "rotate(-2deg) to rotate(2deg)",
+      "tilt-hard": "rotate(-5deg) to rotate(5deg)"
+    }
+  },
+  "typography": {
+    "_rule": "MIX 3-4 different font families on one page. No consistency.",
+    "fonts": {
+      "handwritten": "'Caveat', 'Permanent Marker', 'Indie Flower', 'Kalam'",
+      "serif": "'Playfair Display' (weight 900 for irony)",
+      "mono": "'JetBrains Mono', 'Space Mono'",
+      "system": "'Times New Roman', 'Comic Sans MS' (allowed, even celebrated)",
+      "script": "'Shadows Into Light'"
+    },
+    "hierarchy": "INVERTED — body text large (28px+), headlines small (18px). Or extreme sizes.",
+    "letterSpacing": "extreme values (-5px or 20px) for weird effects"
+  },
+  "color": {
+    "strategy": "intentional clashing — curated tension, not random",
+    "palettes": {
+      "neon-clash": ["#FF00FF magenta", "#00FF00 lime", "#000000 black"],
+      "electric": ["#0000FF blue", "#FF6600 orange", "#FFFFFF white"],
+      "construction": ["#FF0000 red", "#FFFF00 yellow", "#000000 black"],
+      "candy": ["#FF69B4 hotpink", "#00FFFF cyan", "#FFFF00 yellow"]
+    },
+    "saturation": "high — pure RGB primaries allowed",
+    "background": ["plain white", "#F5F5DC beige", "busy pattern"]
+  },
+  "visibleMistakes": {
+    "defaultBrowserStyles": "blue links, underlines, Times New Roman — keep them visible",
+    "wrongShadows": "heavy offset, colored, mismatched blur",
+    "web1Callbacks": "marquee text, blink, hit counters, 'under construction' GIFs"
+  },
+  "physicalElements": {
+    "tape": "washi tape strips, rotated",
+    "stickers": "sticker borders, doodles",
+    "scribbles": "hand-drawn annotations, circles, arrows",
+    "collage": "cut-and-paste, layered paper texture"
+  },
+  "forbidden": [
+    "consistent grid/alignment",
+    "harmonious color palette",
+    "single elegant font family",
+    "polished shadows/gradients",
+    "perfect spacing",
+    "'clean' or 'modern' feel",
+    "accidental bad design (must be intentional)"
+  ],
+  "useCases": {
+    "good": ["art portfolio", "zine", "indie band", "festival", "punk brand", "personal blog", "student project", "experimental agency"],
+    "bad": ["finance/medical/legal", "e-commerce checkout", "government", "B2B enterprise", "news media"]
+  },
+  "references": [
+    "are.na",
+    "mschf.com",
+    "constitutionfacts.com",
+    "old berkeley.edu pages"
+  ]
+}

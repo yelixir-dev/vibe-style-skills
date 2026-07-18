@@ -6,7 +6,7 @@
 30 named design styles — as Claude/GPT skills & copy-paste prompts for vibe coders.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Styles: 5/30](https://img.shields.io/badge/styles-5%2F30-orange)](#-the-30-styles--30-스타일)
+[![Styles: 6/30](https://img.shields.io/badge/styles-6%2F30-orange)](#-the-30-styles--30-스타일)
 [![Free Preview](https://img.shields.io/badge/free%20preview-PDF-blue)](./ebook/FREE-PREVIEW.pdf)
 [![Lang: EN+KR](https://img.shields.io/badge/lang-EN%20%2B%20KR-green)](#-한국어)
 
@@ -67,7 +67,7 @@ For each of the 30 styles, you get:
 | 03 | **Bento Grid** | [SKILL](./skills/bento-grid/SKILL.md) | [prompt](./prompts/bento-grid.md) | [json](./tokens/bento-grid.json) · [css](./tokens/bento-grid.css) | ✅ |
 | 04 | **Claymorphism** | [SKILL](./skills/claymorphism/SKILL.md) | [prompt](./prompts/claymorphism.md) | [json](./tokens/claymorphism.json) · [css](./tokens/claymorphism.css) | ✅ |
 | 05 | **Aurora Gradient** | [SKILL](./skills/aurora-gradient/SKILL.md) | [prompt](./prompts/aurora-gradient.md) | [json](./tokens/aurora-gradient.json) · [css](./tokens/aurora-gradient.css) | ✅ |
-| 06 | Anti-Design | — | — | — | ⏳ |
+| 06 | **Anti-Design** | [SKILL](./skills/anti-design/SKILL.md) | [prompt](./prompts/anti-design.md) | [json](./tokens/anti-design.json) | ✅ |
 | 07 | Maximalism | — | — | — | ⏳ |
 | 08 | Y2K | — | — | — | ⏳ |
 | 09 | Dark Mode First | — | — | — | ⏳ |
@@ -190,7 +190,7 @@ AI에게 이렇게 말하면:
 | 03 | **Bento Grid** | [SKILL](./skills/bento-grid/SKILL.md) | [프롬프트](./prompts/bento-grid.md) | [json](./tokens/bento-grid.json) · [css](./tokens/bento-grid.css) | ✅ |
 | 04 | **Claymorphism** | [SKILL](./skills/claymorphism/SKILL.md) | [prompt](./prompts/claymorphism.md) | [json](./tokens/claymorphism.json) · [css](./tokens/claymorphism.css) | ✅ |
 | 05 | **Aurora Gradient** | [SKILL](./skills/aurora-gradient/SKILL.md) | [prompt](./prompts/aurora-gradient.md) | [json](./tokens/aurora-gradient.json) · [css](./tokens/aurora-gradient.css) | ✅ |
-| 06 | Anti-Design | — | — | — | ⏳ |
+| 06 | **Anti-Design** | [SKILL](./skills/anti-design/SKILL.md) | [prompt](./prompts/anti-design.md) | [json](./tokens/anti-design.json) | ✅ |
 | 07 | Maximalism | — | — | — | ⏳ |
 | 08 | Y2K | — | — | — | ⏳ |
 | 09 | Dark Mode First | — | — | — | ⏳ |
