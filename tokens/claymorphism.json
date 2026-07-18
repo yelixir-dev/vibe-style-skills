@@ -1,0 +1,62 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "claymorphism",
+  "description": "Claymorphism design tokens — soft puffy clay UI with the dual inner+outer shadow trick. Pastel palette, chunky proportions, rounded forms.",
+  "shape": {
+    "borderRadius": {
+      "card": "24px",
+      "button": "999px",
+      "min": "20px",
+      "comment": "clay is soft — sharp corners break the illusion"
+    },
+    "padding": {
+      "card": "28px",
+      "button": "14px 32px",
+      "comment": "chunky proportions — clay is thick"
+    }
+  },
+  "shadow": {
+    "_comment": "THE claymorphism trick — 3 shadows per element",
+    "innerBottom": "inset 0 -8px 16px rgba(0,0,0,0.15)",
+    "innerTop": "inset 0 8px 16px rgba(255,255,255,0.8)",
+    "outer": "0 8px 16px rgba(76,29,149,0.15)",
+    "combined": "inset 0 -8px 16px rgba(0,0,0,0.15), inset 0 8px 16px rgba(255,255,255,0.8), 0 8px 16px rgba(76,29,149,0.15)",
+    "buttonInnerBottom": "inset 0 -6px 12px rgba(76,29,149,0.25)",
+    "buttonInnerTop": "inset 0 6px 12px rgba(255,255,255,0.5)",
+    "buttonOuter": "0 6px 12px rgba(76,29,149,0.20)",
+    "rules": [
+      "outer shadow must be COLORED (matching hue), not black",
+      "inner shadows create the extruded/thick illusion",
+      "never a single flat shadow"
+    ]
+  },
+  "palettes": {
+    "lavender": { "bg": "#f3f0ff", "accent": "#8b5cf6", "shadow": "rgba(76,29,149,0.15)" },
+    "peach":    { "bg": "#fef3f2", "accent": "#fb7185", "shadow": "rgba(159,18,57,0.15)" },
+    "mint":     { "bg": "#f0fdf4", "accent": "#10b981", "shadow": "rgba(6,78,59,0.15)" },
+    "sky":      { "bg": "#eff6ff", "accent": "#3b82f6", "shadow": "rgba(30,58,138,0.15)" },
+    "cream":    { "bg": "#fffbeb", "accent": "#f59e0b", "shadow": "rgba(120,53,15,0.15)" }
+  },
+  "typography": {
+    "fontFamily": "'Nunito', 'Quicksand', 'Pretendard', sans-serif",
+    "headline": { "weight": 700, "comment": "rounded sans, never thin or serif" },
+    "body": { "weight": 400, "fontSize": "17px", "lineHeight": 1.6 },
+    "labels": { "textTransform": "sentence-case", "comment": "never ALL CAPS — too aggressive" }
+  },
+  "forbidden": [
+    "sharp corners (under 16px radius)",
+    "single flat shadow (need the dual inner+outer trick)",
+    "black drop shadows (should be colored/soft)",
+    "saturated colors (pastels only)",
+    "thin fonts (100-300 weight)",
+    "serif fonts",
+    "hard borders (break the extruded illusion)",
+    "ALL CAPS labels"
+  ],
+  "references": [
+    "setproduct.com/blog/claymorphism-design-guide",
+    "dribbble.com/tags/claymorphism",
+    "hype4.academy/articles/design/claymorphism-in-user-interfaces",
+    "designmd.app/library/claymorphism"
+  ]
+}

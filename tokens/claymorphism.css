@@ -1,0 +1,108 @@
+/* ============================================================
+   Claymorphism Design Tokens (CSS) — soft puffy clay UI
+   이 파일을 import하고 파스텔 배경 위에 .clay 요소를 넣으세요.
+   ============================================================ */
+
+:root {
+  /* ---- Pastel base (lavender default) ---- */
+  --clay-bg: #f3f0ff;
+  --clay-surface: #ffffff;
+  --clay-accent: #8b5cf6;
+  --clay-text: #4c1d95;
+  --clay-text-muted: rgba(76, 29, 149, 0.6);
+  --clay-shadow-color: rgba(76, 29, 149, 0.15);
+
+  /* ---- Shape ---- */
+  --clay-radius: 24px;
+  --clay-radius-pill: 999px;
+  --clay-padding: 28px;
+
+  /* ---- The clay trick (3 shadows) ---- */
+  --clay-shadow-inner-bottom: inset 0 -8px 16px rgba(0, 0, 0, 0.15);
+  --clay-shadow-inner-top: inset 0 8px 16px rgba(255, 255, 255, 0.8);
+  --clay-shadow-outer: 0 8px 16px var(--clay-shadow-color);
+  --clay-shadow: var(--clay-shadow-inner-bottom), var(--clay-shadow-inner-top), var(--clay-shadow-outer);
+
+  /* ---- Typography ---- */
+  --clay-font: 'Nunito', 'Quicksand', 'Pretendard', sans-serif;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+
+body {
+  background: var(--clay-bg);
+  font-family: var(--clay-font);
+  color: var(--clay-text);
+}
+
+/* ============================================================
+   Clay components
+   ============================================================ */
+
+/* The fundamental clay card */
+.clay-card {
+  background: var(--clay-surface);
+  border-radius: var(--clay-radius);
+  padding: var(--clay-padding);
+  box-shadow: var(--clay-shadow);
+  /* NO border — borders break the extruded illusion */
+}
+
+/* Clay button — chunky pill */
+.clay-btn {
+  display: inline-block;
+  background: var(--clay-accent);
+  color: #fff;
+  border-radius: var(--clay-radius-pill);
+  padding: 14px 32px;
+  font-family: var(--clay-font);
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow:
+    inset 0 -6px 12px rgba(76, 29, 149, 0.25),
+    inset 0 6px 12px rgba(255, 255, 255, 0.5),
+    0 6px 12px rgba(76, 29, 149, 0.20);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.clay-btn:hover {
+  transform: translateY(-2px);
+}
+.clay-btn:active {
+  transform: scale(0.96);  /* squish 촉감 */
+}
+
+/* Clay icon container (chunky squircle) */
+.clay-icon {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clay-accent);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow:
+    inset 0 -5px 10px rgba(76, 29, 149, 0.3),
+    inset 0 5px 10px rgba(255, 255, 255, 0.4),
+    0 5px 10px rgba(76, 29, 149, 0.2);
+}
+
+/* ============================================================
+   Palette variants
+   ============================================================ */
+
+.clay-lavender { --clay-bg:#f3f0ff; --clay-accent:#8b5cf6; --clay-text:#4c1d95; --clay-shadow-color:rgba(76,29,149,0.15); }
+.clay-peach    { --clay-bg:#fef3f2; --clay-accent:#fb7185; --clay-text:#9f1239; --clay-shadow-color:rgba(159,18,57,0.15); }
+.clay-mint     { --clay-bg:#f0fdf4; --clay-accent:#10b981; --clay-text:#064e3b; --clay-shadow-color:rgba(6,78,59,0.15); }
+.clay-sky      { --clay-bg:#eff6ff; --clay-accent:#3b82f6; --clay-text:#1e3a8a; --clay-shadow-color:rgba(30,58,138,0.15); }
+.clay-cream    { --clay-bg:#fffbeb; --clay-accent:#f59e0b; --clay-text:#78350f; --clay-shadow-color:rgba(120,53,15,0.15); }
+
+/* ============================================================
+   Typography
+   ============================================================ */
+
+h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+body { font-size: 17px; line-height: 1.6; }
