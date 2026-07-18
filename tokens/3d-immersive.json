@@ -1,0 +1,54 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "3d-immersive",
+  "description": "3D / Immersive design tokens — interactive 3D objects, spatial depth, physics-based motion, glass overlays on dark/aurora backgrounds. Apple visionOS / Spline aesthetic.",
+  "depth": {
+    "zAxis": "elements exist in 3D space — foreground, midground, background",
+    "perspective": "transform: perspective(1000px) rotateX/Y",
+    "parallax": "different layers move at different scroll speeds"
+  },
+  "lighting": {
+    "rule": "ONE consistent light source — all shadows align",
+    "ambient": "filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3))",
+    "highlights": "top edge highlights on 3D objects (light from above)"
+  },
+  "motion": {
+    "easing": "cubic-bezier(0.23, 1, 0.32, 1) — never linear",
+    "mouseTracking": "3D objects tilt toward cursor slightly",
+    "spring": "physics-based for natural feel"
+  },
+  "background": {
+    "rule": "dark or aurora — NEVER flat white (flattens 3D)",
+    "options": ["#0a0a1a deep", "aurora gradient", "deep navy #0f172a"]
+  },
+  "implementation": {
+    "level1": "CSS perspective transforms — lightweight, PDF-safe",
+    "level2": "Spline embed — no-code 3D, interactive",
+    "level3": "Three.js / React Three Fiber — full custom control"
+  },
+  "overlay": {
+    "type": "minimal glassmorphism — translucent + backdrop-blur",
+    "rule": "3D is the star, UI should not compete"
+  },
+  "typography": {
+    "rule": "minimal, clean — 3D is the visual hero",
+    "font": "'Inter', 'SF Pro'",
+    "weight": "400-600"
+  },
+  "forbidden": [
+    "flat white background",
+    "inconsistent light sources",
+    "linear animations",
+    "cluttered UI around 3D",
+    "heavy 2D elements competing with 3D",
+    "no shadows/highlights",
+    "too many 3D objects (one hero is enough)",
+    "no mobile/static fallback"
+  ],
+  "references": [
+    "spline.design",
+    "apple.com/apple-vision-pro",
+    "loom.com",
+    "framer.com/motion"
+  ]
+}

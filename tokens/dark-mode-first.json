@@ -1,0 +1,60 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "dark-mode-first",
+  "description": "Dark Mode First tokens — darkness as the PRIMARY experience (not a toggle). Deep near-black base, subtle borders, neon accents with glow, surface-based elevation. Vercel/Linear/Arc aesthetic.",
+  "background": {
+    "base": "#0a0a0a",
+    "surface": "#141414",
+    "elevated": "#1a1a1a",
+    "hover": "#222222",
+    "rule": "deep near-black, NEVER grey #333"
+  },
+  "text": {
+    "primary": "#fafafa",
+    "secondary": "#a1a1aa",
+    "muted": "#71717a",
+    "rule": "WCAG AA 4.5:1 minimum; #fafafa not pure white"
+  },
+  "accent": {
+    "rule": "ONE family only — dark mode rewards restraint",
+    "families": {
+      "blue": "#3b82f6",
+      "cyan": "#06b6d4",
+      "emerald": "#10b981",
+      "violet": "#8b5cf6",
+      "pink": "#ec4899",
+      "amber": "#f59e0b"
+    },
+    "glow": "box-shadow: 0 0 20px rgba(accent, 0.4)"
+  },
+  "border": {
+    "default": "1px solid rgba(255,255,255,0.08)",
+    "rule": "barely visible — never #555 solid"
+  },
+  "elevation": {
+    "method": "lighter surface color, NOT heavy shadows",
+    "comment": "drop shadows invisible on dark — use color shift"
+  },
+  "typography": {
+    "sans": "'Inter', 'SF Pro', 'Geist', 'IBM Plex Sans'",
+    "mono": "'JetBrains Mono', 'Fira Code', 'SF Mono'",
+    "headline": { "weight": "600-700", "comment": "never 900 — too heavy on dark" },
+    "body": { "weight": 400, "size": "16-17px", "lineHeight": "1.6-1.7", "letterSpacing": "0.01em" }
+  },
+  "forbidden": [
+    "grey base (#333, #2d2d2d)",
+    "heavy drop shadows",
+    "pure white text (#ffffff)",
+    "multiple accent families",
+    "solid visible borders (#555)",
+    "low-contrast secondary text",
+    "light mode as default"
+  ],
+  "references": [
+    "vercel.com",
+    "linear.app",
+    "arc.net",
+    "raycast.com",
+    "warp.dev"
+  ]
+}

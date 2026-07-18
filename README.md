@@ -6,7 +6,7 @@
 30 named design styles — as Claude/GPT skills & copy-paste prompts for vibe coders.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Styles: 8/30](https://img.shields.io/badge/styles-8%2F30-orange)](#-the-30-styles--30-스타일)
+[![Styles: 10/30](https://img.shields.io/badge/styles-10%2F30-orange)](#-the-30-styles--30-스타일)
 [![Free Preview](https://img.shields.io/badge/free%20preview-PDF-blue)](./ebook/FREE-PREVIEW.pdf)
 [![Lang: EN+KR](https://img.shields.io/badge/lang-EN%20%2B%20KR-green)](#-한국어)
 
@@ -70,8 +70,8 @@ For each of the 30 styles, you get:
 | 06 | **Anti-Design** | [SKILL](./skills/anti-design/SKILL.md) | [prompt](./prompts/anti-design.md) | [json](./tokens/anti-design.json) | ✅ |
 | 07 | **Maximalism** | [SKILL](./skills/maximalism/SKILL.md) | [prompt](./prompts/maximalism.md) | [json](./tokens/maximalism.json) | ✅ |
 | 08 | **Y2K** | [SKILL](./skills/y2k/SKILL.md) | [prompt](./prompts/y2k.md) | [json](./tokens/y2k.json) | ✅ |
-| 09 | Dark Mode First | — | — | — | ⏳ |
-| 10 | 3D / Immersive | — | — | — | ⏳ |
+| 09 | **Dark Mode First** | [SKILL](./skills/dark-mode-first/SKILL.md) | [prompt](./prompts/dark-mode-first.md) | [json](./tokens/dark-mode-first.json) | ✅ |
+| 10 | **3D / Immersive** | [SKILL](./skills/3d-immersive/SKILL.md) | [prompt](./prompts/3d-immersive.md) | [json](./tokens/3d-immersive.json) | ✅ |
 
 #### Vol. 2 — **HERITAGE** (art & print movements)
 `swiss` · `bauhaus` · `memphis` · `art-deco` · `editorial` · `skeuomorphism` · `neumorphism` · `hand-drawn` · `isometric` · `pixel-art`
@@ -193,8 +193,8 @@ AI에게 이렇게 말하면:
 | 06 | **Anti-Design** | [SKILL](./skills/anti-design/SKILL.md) | [prompt](./prompts/anti-design.md) | [json](./tokens/anti-design.json) | ✅ |
 | 07 | **Maximalism** | [SKILL](./skills/maximalism/SKILL.md) | [prompt](./prompts/maximalism.md) | [json](./tokens/maximalism.json) | ✅ |
 | 08 | **Y2K** | [SKILL](./skills/y2k/SKILL.md) | [prompt](./prompts/y2k.md) | [json](./tokens/y2k.json) | ✅ |
-| 09 | Dark Mode First | — | — | — | ⏳ |
-| 10 | 3D / Immersive | — | — | — | ⏳ |
+| 09 | **Dark Mode First** | [SKILL](./skills/dark-mode-first/SKILL.md) | [prompt](./prompts/dark-mode-first.md) | [json](./tokens/dark-mode-first.json) | ✅ |
+| 10 | **3D / Immersive** | [SKILL](./skills/3d-immersive/SKILL.md) | [prompt](./prompts/3d-immersive.md) | [json](./tokens/3d-immersive.json) | ✅ |
 
 #### Vol.2 — **HERITAGE** (미술사·인쇄 디자인 운동)
 `swiss` · `bauhaus` · `memphis` · `art-deco` · `editorial` · `skeuomorphism` · `neumorphism` · `hand-drawn` · `isometric` · `pixel-art`
