@@ -1,0 +1,82 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "neo-brutalism",
+  "description": "Neo-Brutalism (Neubrutalism) design tokens — cream background, fluorescent accents, hard offset shadows, 2px black borders.",
+  "color": {
+    "background": {
+      "value": "#FFF9E6",
+      "comment": "warm cream yellow — NEVER pure white"
+    },
+    "surface": {
+      "primary": { "value": "#FFD803", "comment": "signature Gumroad yellow" },
+      "accent1": { "value": "#FF6B9D", "comment": "hot pink" },
+      "accent2": { "value": "#00E5FC", "comment": "cyan" },
+      "accent3": { "value": "#A6FF4D", "comment": "lime (optional)" }
+    },
+    "text": {
+      "value": "#0A0A0A",
+      "comment": "jet black — slightly softer than pure #000"
+    },
+    "border": {
+      "value": "#0A0A0A",
+      "comment": "same jet black as text"
+    }
+  },
+  "border": {
+    "width": { "value": "2px", "comment": "2-3px acceptable; never 1px" },
+    "style": { "value": "solid", "comment": "never dashed/dotted" },
+    "radius": {
+      "sharp": { "value": "0px" },
+      "round": { "value": "16px", "comment": "larger also fine; never 4-12px" }
+    }
+  },
+  "shadow": {
+    "brutalSm": { "value": "2px 2px 0 #0A0A0A" },
+    "brutal": { "value": "4px 4px 0 #0A0A0A", "comment": "default; blur is ALWAYS 0" },
+    "brutalLg": { "value": "8px 8px 0 #0A0A0A" },
+    "hover": {
+      "transform": "translate(-2px, -2px)",
+      "shadow": "6px 6px 0 #0A0A0A"
+    }
+  },
+  "typography": {
+    "headline": {
+      "fontFamily": "'Space Grotesk', 'Pretendard', sans-serif",
+      "fontWeight": 700,
+      "fontSize": { "desktop": "56px", "mobile": "36px" }
+    },
+    "body": {
+      "fontFamily": "'Inter', 'Pretendard', sans-serif",
+      "fontWeight": 400,
+      "fontSize": "17px",
+      "lineHeight": 1.6
+    },
+    "label": {
+      "fontFamily": "'Space Mono', monospace",
+      "fontWeight": 700,
+      "fontSize": "13px",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.05em"
+    }
+  },
+  "spacing": {
+    "section": "80px",
+    "card": "24px",
+    "comment": "generous whitespace — loud colors need to breathe"
+  },
+  "forbidden": [
+    "pure white #FFFFFF background",
+    "soft/blurred shadows (box-shadow with blur > 0)",
+    "gradients of any kind",
+    "border-radius 4-12px (mid values)",
+    "more than 3 accent colors simultaneously",
+    "serif headline fonts",
+    "glassmorphism / backdrop-filter blur"
+  ],
+  "references": [
+    "gumroad.com",
+    "linear.app",
+    "figma.com (marketing)",
+    "retroui.dev"
+  ]
+}
