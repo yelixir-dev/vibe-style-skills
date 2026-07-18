@@ -1,0 +1,94 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "bento-grid",
+  "description": "Bento Grid design tokens — modular layout with unequal-sized rectangular cells in a CSS Grid. Layout-first style; color/content is flexible (Apple light, dark neon, glass, brutal variants).",
+  "layout": {
+    "type": "css-grid",
+    "columns": {
+      "desktop": 3,
+      "tablet": 2,
+      "mobile": 1,
+      "comment": "3-4 columns is the sweet spot; 5+ gets chaotic"
+    },
+    "gap": {
+      "value": "16px",
+      "range": "12-24px",
+      "comment": "MUST be consistent across all cells — this creates the bento box divider feel"
+    }
+  },
+  "cell": {
+    "borderRadius": {
+      "value": "20px",
+      "range": "16-24px",
+      "comment": "sharp corners feel wrong for bento — it's a soft material"
+    },
+    "padding": {
+      "value": "28px",
+      "range": "24-32px",
+      "comment": "cells need to breathe"
+    },
+    "variants": {
+      "hero": "grid-column: span 2; grid-row: span 2",
+      "wide": "grid-column: span 2",
+      "tall": "grid-row: span 2",
+      "square": "default 1×1",
+      "comment": "asymmetry is the whole point — never all equal"
+    },
+    "backgroundColor": {
+      "apple-light": "#f5f5f7",
+      "white": "#ffffff",
+      "dark": "#1a1f2e",
+      "darkBg": "#0a0e1a",
+      "comment": "flexible — bento is layout-first, color is secondary"
+    }
+  },
+  "typography": {
+    "heroHeadline": {
+      "fontSize": "48px",
+      "fontWeight": 700,
+      "comment": "biggest text on the page, lives in the hero cell"
+    },
+    "cellHeadline": {
+      "fontSize": "24px",
+      "fontWeight": 600,
+      "comment": "each cell's mini-headline"
+    },
+    "cellBody": {
+      "fontSize": "15px",
+      "lineHeight": 1.5,
+      "comment": "keep short — max 2-3 lines per cell"
+    },
+    "eyebrow": {
+      "fontSize": "11px",
+      "textTransform": "uppercase",
+      "letterSpacing": "0.08em"
+    }
+  },
+  "responsive": {
+    "tablet": "2 columns, hero+wide span 2",
+    "mobile": "1 column, all spans reset to auto",
+    "comment": "must collapse gracefully — non-negotiable"
+  },
+  "ironRules": [
+    "cells MUST be unequal sizes (asymmetry is the point)",
+    "gap MUST be consistent (one value, never per-cell margins)",
+    "each cell MUST be self-contained (no content bleeding)",
+    "one hero cell anchors the grid (usually 2×2)",
+    "border-radius 16px minimum",
+    "max 2-3 lines of text per cell",
+    "max 4 columns (5+ gets chaotic)"
+  ],
+  "variants": [
+    "apple-light — grey cells on white, product imagery",
+    "dark-neon — dark cells with per-cell neon accent",
+    "colorful — each cell a different brand color",
+    "glass — cells are glassmorphism cards over aurora",
+    "brutal — cells are neo-brutalist cards with offset shadow"
+  ],
+  "references": [
+    "apple.com/iphone",
+    "linear.app/features",
+    "notion.so",
+    "stripe.com"
+  ]
+}
