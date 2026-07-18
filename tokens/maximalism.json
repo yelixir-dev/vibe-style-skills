@@ -1,0 +1,64 @@
+{
+  "$schema": "design-tokens/v1",
+  "style": "maximalism",
+  "description": "Maximalism design tokens — more is more. Dense layered composition, abundant color, oversized typography, collaged imagery. Fashion/art/festival energy.",
+  "philosophy": "Fill every void. Density is the point. The opposite of minimalism.",
+  "composition": {
+    "density": "HIGH — no empty whitespace, every area filled",
+    "layering": "elements overlap, collide, stack via z-index (fg/mid/bg layers)",
+    "collage": "multiple images/elements overlap like a moodboard"
+  },
+  "color": {
+    "strategy": "abundant — 5-7 vibrant hues, curated (not random)",
+    "background": ["dark #0a0a1a", "deep jewel tones", "vibrant gradient"],
+    "palette": {
+      "neon-pink": "#FF00FF",
+      "electric-blue": "#0000FF",
+      "acid-yellow": "#FFFF00",
+      "lime": "#00FF00",
+      "violet": "#8B00FF",
+      "cyan": "#00FFFF",
+      "orange": "#FF6600"
+    },
+    "gradients": "allowed and encouraged",
+    "metallic": "gold/silver/holographic accents for fashion maximalism"
+  },
+  "typography": {
+    "headline": {
+      "size": "150-300px",
+      "fonts": ["Anton", "Bebas Neue", "Archivo Black", "custom lettering"],
+      "treatment": "rotate, layer, color, outline, text-shadow — type IS a visual element"
+    },
+    "mix": "2-3 display fonts together (serif + sans + decorative)",
+    "body": { "font": "Inter or strong grotesk", "size": "14-18px" },
+    "decorative": "handwritten accents, outlined text, gradient text, rotated labels"
+  },
+  "imagery": {
+    "quantity": "many at once, collaged",
+    "treatment": "overlapping, bordered, shadowed, rotated",
+    "fillers": ["stickers", "badges", "GIFs", "patterns", "textures"]
+  },
+  "background": {
+    "type": "layered — gradient + pattern + texture",
+    "never": "plain white"
+  },
+  "forbidden": [
+    "empty whitespace (minimalism)",
+    "single clean grid",
+    "restrained 2-color palette",
+    "one typeface/weight",
+    "plain background",
+    "fear of overlap",
+    "small polite typography"
+  ],
+  "useCases": {
+    "good": ["fashion brand", "music festival", "art portfolio", "creative agency", "youth culture", "indie publishing", "game launch"],
+    "bad": ["data dashboard", "enterprise B2B", "accessibility-first", "e-commerce checkout", "news media"]
+  },
+  "references": [
+    "pentagram.com",
+    "studio-brichetziegler.com",
+    "lopez-design.com",
+    "awwwards.com/sites/maximalism"
+  ]
+}
